@@ -1,5 +1,5 @@
 # LiborMarketModel
-Single and Multi Factor Libor Market Model with Monte Carlo to price a swaption receiver and a zcb option. 
+Single and Multi Factor Libor Market Model with Monte Carlo simulations to price a swaption receiver and a zcb option. 
 In these two python notebooks, we set up two Libor Market Models, a single factor where all forward rates are driven by the same Brownian motion and a multi factor where we allow correlation with three Principal Component factors. We use the models in a monte carlo set up to price two derivatives: an option on a Zero Coupon Bond and a Swaption Receiver. 
 The data comes from Fixed Income Securities, Pietro Veronesi, pages pages 722 to 726 and 779. Together with the data, Pietro also provided the prices, so we have a benchmark to check our results. Our prices are also very close to those reported in the book.
 The python notebooks were written with surely slow but easy to understand loops. Not ideal with Monte Carlo simulations! We do not use classes and we did not try to optimize the code. Also the way we implemented the two derivatives is not efficient. Neverthless we hope the project remains easy to unerstand and follow.
